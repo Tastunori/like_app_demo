@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LikeApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+
+    <header>
+      <div class="header">
+        <img src = "<%= "/logo_image/Arigato.png" %>"  class="header_logo">
+       <div class="header_list">
+        <ul>
+         <% if @current_user %>
+          <li>
+            <%= link_to("ログアウト", "/logout",{method: :post}) %>
+          </li>
+          <li>
+            <%= link_to("ユーザー一覧", "/users/index") %>
+          </li>
+          <li>
+            <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
+          </li>
+          <% else %>
+          <li>
+            <%= link_to("新規登録", "/sigun_up") %>
+          </li>
+          <li>
+            <%= link_to("ログイン", "/login") %>
+         </li>
+         <% end %>
+        </ul>
+       </div>
+      </div>
+    </header>
+<body>
+    <%= yield %>
+</body>
+
+<footer>
+
+
+</footer>
+</html>

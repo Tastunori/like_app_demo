@@ -1,0 +1,35 @@
+
+
+<%= form_tag("/posts/#{@to_user.id}/create") do %>
+
+<div class="top_message">
+<h1>「<%= @to_user.name %>」へありがとうを送る</h1>
+</div>
+
+<div class="message_form">
+<textarea name="content" ></textarea>
+
+<input type="submit" value="送信" class="new_bottun">
+</div>
+
+<% end %>
+
+<div class="from_message">
+ <h2>「<%= @to_user.name %>」のありがとう</h2>
+</div>
+
+<% @posts.each do |post| %>
+
+<div class= "message_index">
+ <% post_user = User.find_by(id: post.user_id) %>
+<div class="user_left">
+<img src="<%= "/user_images/#{post_user.image_name}" %>">
+</div>
+
+
+ <div class="user_name"><%= post_user.name %></div>
+
+ <div class="user_message"><%= post.content %></div>
+</div>
+
+ <% end %>

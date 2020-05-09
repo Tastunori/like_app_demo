@@ -1,0 +1,32 @@
+
+
+<div class="my_profile">
+<div class="show_img">
+  <img src = "<%= "/user_images/#{@current_user.image_name}" %>" >
+  </div>
+
+<div class="show_name">
+  <%= @current_user.name %>
+</div>
+
+<div class="change_img">
+<p><%= link_to("プロフィール画像を変更する", "/users/#{@current_user.id}/edit")%> </p>
+</div>
+</div>
+<div class="from_message">
+<h1>「<%= @to_user.name %>」のありがとう</h1>
+</div>
+
+<% @posts.each do |post| %>
+<div class="message_index">
+<% post_user = User.find_by(id: post.user_id) %>
+<div class="user_left">
+<img src="<%= "/user_images/#{post_user.image_name}" %>">
+</div>
+
+ <div class="user_name"><%= post_user.name %></div>
+
+<div class="user_message"><%= post.content %></div>
+</div>
+
+<% end %>

@@ -1,0 +1,152 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.form_top {
+  text-align: center;
+  color: #DC143C;
+  opacity: 80%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.login_top{
+  text-align: center;
+  font-size: 20px;
+}
+
+ .login_name{
+
+ }
+
+ .login_password{
+   padding-top: 30px;
+   padding-bottom: 20px
+ }
+
+ .login_button{
+   background-color: #FA8072;
+   opacity: 70%;
+   font-weight: bold;
+   width: 80px;
+   height:40px;
+ }
+
+ .login_button:hover{
+   background-color:  #DC143C;
+   opacity: 60%;
+   font-weight: bold;
+ }
+
+ .to_sigun_up{
+   padding-top: 40px;
+   text-decoration: none;
+ }
+
+.form_error{
+  color: #FF0000;
+  text-align: center;
+}
+
+.index_top{
+  text-align: center;
+  color: #DC143C;
+  opacity: 80%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.user_left img{
+ width: 80px;
+ height: 80px;
+ border-radius: 30%;
+ object-fit: cover;
+}
+.user_index{
+ padding: 20px 30px;
+ box-shadow: 0 2px 6px #c1ced7;
+ display: table;
+ width: 50%;
+ margin-left:auto;
+ margin-right: auto;
+ background-color: #FFFAFA;
+}
+.user_left{
+  float:left;
+  padding-left: 20px;
+}
+.user_right{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 230px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.my_profile{
+  padding-top: 20px;
+  padding-left: 250px;
+}
+.show_img img{
+  width: 180px;
+  height: 180px;
+  border-radius: 30%;
+  object-fit: cover;
+}
+
+.show_img{
+  float: left;
+  padding-top: 40px;
+  padding-right: 150px;
+}
+
+.show_name{
+  padding-top: 90px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.to_message{
+
+}
+
+.from_message{
+  text-align: center;
+  color: #DC143C;
+  opacity: 80%;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.message_index{
+  padding: 20px 30px;
+  box-shadow: 0 2px 6px #c1ced7;
+  display: table;
+  width: 50%;
+  margin-left:auto;
+  margin-right: auto;
+  background-color: #FFFAFA;
+}
+.user_left img{
+  float:left;
+  padding-right: 20px;
+
+}
+.user_name{
+  color: #DC143C;
+  font-weight: bold;
+}
+
+.user_message{
+  padding-top: 5px;
+}
+
+.chage_profile{
+  text-align: center;
+}
+.top_change{
+  color: #DC143C;
+  opacity: 80%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}

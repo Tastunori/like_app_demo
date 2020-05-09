@@ -1,0 +1,19 @@
+
+
+
+  <div class="form_top">
+  <h1>新規登録して日々の感謝を伝えよう！</h1>
+  </div>
+
+<div class="login_top">
+  <%= form_tag("/users/create") do %>
+    <p>ユーザー名</p>
+    <input name="name">
+    <div class="login_password">
+    <p>パスワード</p>
+    <input type="password" name="password">
+    </div>
+
+    <p><input type="submit" value="新規登録" class="login_button"></p>
+</div>
+  <% end %>

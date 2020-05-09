@@ -1,0 +1,12 @@
+
+<div class="chage_profile">
+
+<%= form_tag("/users/#{@current_user.id}/update",{multipart: true}) do %>
+
+ <div class="top_change">
+ <p>プロフィール画像を変更</p>
+ </div>
+ <input name= "image" type="file" >
+ <input type="submit" value="保存">
+<% end %>
+</div>
